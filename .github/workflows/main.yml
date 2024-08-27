@@ -28,7 +28,7 @@ jobs:
       run: doctl registry login --expiry-seconds 1200
 
     # Build the Docker image
-    - name: Build the Docker image
+    - name: Build the Docker images
       run: docker build -t nginx-cons-img .
     # Tag the Docker image for DigitalOcean Container Registry
     - name: Tag Docker image for DigitalOcean Container Registry
